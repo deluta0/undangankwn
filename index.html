@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="index.css" />
+    <title>Kawinan Generator</title>
+  </head>
+  <body>
+    <div class="title">
+      <h3>
+        Undangan Kawinan Generator
+      </h3>
+    </div>
+    <div class="row">
+      <div class="column">
+        <label for="yourname">Nama kamu:</label><br />
+        <input
+          type="text"
+          id="yourname"
+          name="yourname"
+          required="required"
+          placeholder="Abdul"
+        /><br />
+        <label for="waifuname">Nama istri:</label><br />
+        <input
+          type="text"
+          id="waifuname"
+          name="waifuname"
+          required="required"
+          placeholder="Eghy"
+        /><br />
+        <label for="tempatkawin">Tempat kawinan:</label><br />
+        <input
+          type="text"
+          id="tempatkawin"
+          name="tempatkawin"
+          required="required"
+          placeholder="Tugu muda"
+        /><br />
+        <label for="alamatkawin">Alamat kawinan:</label><br />
+        <input
+          type="text"
+          id="alamatkawin"
+          name="alamatkawin"
+          required="required"
+          placeholder="jl. pemuda no.1"
+        /><br />
+        <label for="tanggalkawin">Tanggal kawinan:</label><br />
+        <input
+          type="date"
+          id="tanggalkawin"
+          name="tanggalkawin"
+          required="required"
+        /><br />
+        <label for="timestart">Jam mulai:</label><br />
+        <input
+          type="time"
+          id="timestart"
+          name="timestart"
+          required="required"
+        /><br /><br />
+        <!-- <input
+            onclick="generateKawin()"
+            type="submit"
+            name="generateBtn"
+            id="generateBtn"
+            value="Generate"
+          /> -->
+        <button onclick="generateKawin()" type="button" id="generateBtn">
+          Generate
+        </button>
+        <button disabled onclick="copyUndangan()" type="button" id="copyBtn">
+          Copy
+        </button>
+      </div>
+      <div class="column">
+        <span id="undangan"></span>
+      </div>
+    </div>
+  </body>
+</html>
